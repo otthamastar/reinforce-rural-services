@@ -1,0 +1,136 @@
+[
+    {
+        "county": "基隆市",
+        "countycode": "10017",
+        "district":"北部",
+        "districtcode":"01"
+    }
+    ,{
+        "county": "臺北市",
+        "countycode": "63000",
+        "district":"北部",
+        "districtcode":"01"
+    }
+    ,{
+        "county":"新北市",
+        "countycode":"65000",
+        "district":"北部",
+        "districtcode":"01"
+    }
+    ,{
+        "county":"桃園市",
+        "countycode":"68000",
+        "district":"北部",
+        "districtcode":"01"
+    }
+    ,{
+        "county": "新竹市",
+        "countycode": "10018",
+        "district":"北部",
+        "districtcode":"01"
+    }
+    ,{
+        "county":"新竹縣",
+        "countycode":"10004",
+        "district":"北部",
+        "districtcode":"01"
+    }
+    ,{
+        "county":"宜蘭縣",
+        "countycode":"10002",
+        "district":"北部",
+        "districtcode":"01"
+    }
+    ,{
+        "county":"苗栗縣",
+        "countycode":"10005",
+        "district":"中部",
+        "districtcode":"02"
+    }
+    ,{
+        "county":"臺中市",
+        "countycode":"66000",
+        "district":"中部",
+        "districtcode":"02"
+    }
+    ,{
+        "county": "彰化縣",
+        "countycode": "10007",
+        "district":"中部",
+        "districtcode":"02"
+    }
+    ,{
+        "county":"南投縣",
+        "countycode":"10008",
+        "district":"中部",
+        "districtcode":"02"
+    }
+    ,{
+        "county": "雲林縣",
+        "countycode": "10009",
+        "district":"中部",
+        "districtcode":"02"
+    },
+    {
+        "county": "嘉義市",
+        "countycode": "10020",
+        "district":"南部",
+        "districtcode":"03"
+    }
+    ,{
+        "county":"嘉義縣",
+        "countycode":"10010",
+        "district":"南部",
+        "districtcode":"03"
+    }
+    ,{
+        "county":"臺南市",
+        "countycode":"67000",
+        "district":"南部",
+        "districtcode":"03"
+    }
+    ,{
+        "county":"高雄市",
+        "countycode":"64000",
+        "district":"南部",
+        "districtcode":"03"
+    }
+    ,{
+        "county":"屏東縣",
+        "countycode":"10013",
+        "district":"南部",
+        "districtcode":"03"
+    }
+    ,{
+        "county":"臺東縣",
+        "countycode":"10014",
+        "district":"東部",
+        "districtcode":"04"
+    }
+    ,{
+        "county":"花蓮縣",
+        "countycode":"10015",
+        "district":"東部",
+        "districtcode":"04"
+    }
+    ,{
+        "county":"連江縣",
+        "countycode":"09007",
+        "district":"離島",
+        "districtcode":"05"
+    }
+    ,{
+        "county":"澎湖縣",
+        "countycode":"10016",
+        "district":"離島",
+        "districtcode":"05"
+    }
+    ,{
+        "county":"金門縣",
+        "countycode":"09020",
+        "district":"離島",
+        "districtcode":"05"
+    }
+]
+
+

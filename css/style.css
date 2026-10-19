@@ -1,0 +1,339 @@
+/* 2026更新 */
+#moda1331-deptWork,#moda1331-deptPlan,#moda1331-deptList{
+	display: none !important;
+}
+[aria-label="查驗量測"],
+[aria-label="數位應用"],
+[aria-label="數位影音"],
+[aria-label="創新應用 活動紀實"],
+[aria-label="現場查驗 量測紀錄"],
+[aria-label="數位服務 精選影音"]{
+    display: none !important;
+}
+.moda1331-color-primary{
+	color: var(--md-primary-1);
+}
+.moda1331-color-primary-g{
+	color: #45a7aa;
+}
+.moda1331-font-n{
+	font-size: 125%;
+	line-height: 1.75;
+	font-weight: 400;
+}
+@media (max-width: 576px) {
+	.moda1331-font-n{
+		font-size: 115%;
+	}
+}
+/* banner */
+.moda1331-guide.moda1331-2026.icon5G{
+	width: 33%;
+    left: 32%;
+    top: 3%;
+}
+.moda1331-guide.moda1331-2026.icon4G{
+	width: 12%;
+    left: 80%;
+    top: 14%;
+}
+@media (max-width: 768px) {
+	.moda1331-guide.moda1331-2026.icon5G {
+		width: 45%;
+		left: 23%;
+		top: -10%;
+	}
+	.moda1331-guide.moda1331-2026.icon4G{
+		width: 18%;
+		left: 76%;
+		top: 8%;
+	}
+}
+.moda1331-2026.icon5G{
+	--iconcolor:#6991c0;
+}
+.moda1331-2026.icon4G{
+	--iconcolor:#b2c2df;
+}
+.moda1331-2026 .moda1331-text,
+.moda1331-2026 .moda1331-wave{
+	fill: var(--iconcolor);
+}
+.moda1331-2026 .moda1331-wave {
+	opacity: 0;
+	animation: wifiPulse 1.6s infinite;
+}
+
+.icon5G .moda1331-group1 { animation-delay: .1s; }
+.icon5G .moda1331-group2 { animation-delay: .3s; }
+.icon5G .moda1331-group3 { animation-delay: .6s; }
+
+.icon4G .moda1331-group1 { animation-delay: .3s; }
+.icon4G .moda1331-group2 { animation-delay: .6s; }
+.icon4G .moda1331-group3 { animation-delay: .9s; }
+
+.moda1331-2026.iconwifi{
+	fill: var(--iconcolor);
+	--iconcolor:#C9E6E9;
+}
+.moda1331-2026.iconwifi{
+	width: 20%;
+    left: 51%;
+    top: 16%;
+}
+.moda1331-2026.iconwifi02{
+	width: 19.5%;
+    left: 72%;
+    top: 2%;
+	--iconcolor:#BCE8EB;
+}
+.iconwifi .moda1331-group1 { animation-delay: .3s; }
+.iconwifi .moda1331-group2 { animation-delay: .6s; }
+.iconwifi .moda1331-group3 { animation-delay: .9s; }
+
+@keyframes wifiPulse {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+/* slogan */
+.moda1331-2026-slogan{
+	font-size: 200%;
+	font-weight: 600;
+	padding: 5vh 0;
+	margin-bottom: 0;
+}
+.moda1331-2026-slogan>span{
+	padding: 0 .25%;
+}
+@media (min-width: 992px) {
+	.moda1331-2026-slogan .slogan-h1{
+		font-weight: 700;
+		font-size: 150%;
+	}
+}
+@media (max-width: 991px) {
+	.moda1331-2026-slogan{
+		font-size: 180%;
+	}
+}
+@media (max-width: 768px) {
+	.moda1331-2026-slogan{
+		font-size: 150%;
+	}
+}
+@media (max-width: 576px) {	
+	html[lang="en"] .moda1331-2026-slogan{
+		font-size: 110%;
+	}
+	.moda1331-2026-slogan>span{
+		display: block;
+	}
+}
+/* videoBox */
+.moda1331-videoBox{
+	padding: 0 5%;
+	margin-bottom: 30px;
+}
+.moda1331-videoBox .pic.position-relative{
+	max-width: 840px;
+	z-index: 2;
+	margin: 0 auto;
+}
+.moda1331-videoBox [class*='videoBox-BG']{
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	height: 90%;
+	width: auto;
+}
+.moda1331-videoBox .videoBox-BGL{
+	left: 0;
+}
+.moda1331-videoBox .videoBox-BGR{
+	right: 0;
+}
+/* info */
+.moda1331-2026-info{
+	align-items: center;
+	padding: 5vh 0 8vh;
+}
+.moda1331-2026-info img{
+	max-width: 95%;
+	height: auto;
+	margin: 0 auto 5vh;
+	display: block;
+}
+.moda1331-2026-info .moda1331-font-n{
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.moda1331-starlist{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+.moda1331-starlist li{
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-size: 110%;
+	font-weight: 500;
+}
+.moda1331-starlist li::before {
+	content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #FFA000;
+    position: relative;
+    z-index: 2;
+    clip-path: path("M9.04 0L12.23 5.84L18.07 9.04L12.23 12.23L9.04 18.07L5.84 12.23L0 9.04L5.84 5.84L9.04 0Z");
+	margin-right: 3px;
+}
+@media (min-width: 992px) {	
+
+	.moda1331-2026-info .moda1331-font-n{
+		padding-right: 20px;
+	}
+}
+@media (max-width: 991px) {
+	.moda1331-2026-info{
+		padding-top: 3vh;
+		padding-bottom: 5vh;
+	}
+	.moda1331-2026-info .moda1331-font-n{
+		padding-top: 20px;
+	}
+	.moda1331-starlist{
+		margin-bottom: 5vh;
+	}
+	/* .moda1331-starlist li{
+		margin: 0 10px 20px;
+	} */
+}
+@media (max-width: 576px) {
+
+	.moda1331-starlist{
+		flex-flow: column;
+	}
+}
+/* 重要成效 */
+.moda1331-effect{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10vh;
+}
+.moda1331-effect .moda1331-effect-item{
+	aspect-ratio: 5/4;
+	max-width: 400px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	width: 96%;
+	background-color: #FBFBFB;
+	margin: 0 2%;
+	border-radius: 10px;
+	box-shadow: 5px 5px 0 #ECECEC;
+	transition: all .5s;
+	border: 2px solid #FBFBFB;
+	padding: 10px;
+}
+.moda1331-effect .moda1331-effect-item .h4{
+	color: #5b5b5b;
+	font-size: 180%;
+	font-weight: 600;
+	padding: 20px 0 0;
+	margin-bottom: 0;
+}
+.moda1331-effect .moda1331-effect-item:hover{
+	border: 2px solid #45a7aa;
+	box-shadow: 5px 5px 0 #45a7aa;;
+}
+.moda1331-effect .moda1331-effect-item>img{
+	width: 70%;
+	max-width: 180px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+.moda1331-linkbtn{
+	max-width: 1280px;
+	margin: 0 auto 10vh;
+}
+.moda1331-linkbtn.accordion .accordion-item .accordion-button:after{
+	display: none;
+}
+@media (max-width: 991px) {	
+
+	.moda1331-effect .moda1331-effect-item .h4{
+		font-weight: 500;
+	}
+}
+@media (max-width: 768px) {	
+	.moda1331-effect{
+		flex-flow: column;
+		margin-bottom: 5vh;
+	}
+	.moda1331-effect .moda1331-effect-item{
+		aspect-ratio: 4/1;
+		margin: 10px auto;
+        flex-flow: row-reverse;
+        padding: 5px 5%;
+        justify-content: center;
+		width: 100%;
+		max-width: 480px;
+	}
+	.moda1331-effect .moda1331-effect-item .h4 {
+		font-weight: 500;
+		padding: 0 10px;
+		margin: 0;
+	}
+	.moda1331-effect .moda1331-effect-item>img {
+		width: 20%;
+		margin: 0;
+		margin-right: 20px;
+	}
+}
+
+
+@media (max-width: 767.9px) {
+	#eventMap3 .eventTable1 td:before {
+        -webkit-flex: 0 0 5em;
+        -ms-flex: 0 0 5em;
+        flex: 0 0 5em;
+    }
+    .eventMap2 #eventMap2-stop tbody td.eventTable1-w1-7 {
+        display: flex;
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .eventNav1.eventNav-2025 .nav-item {
+        width: 33%;
+        margin: 0 auto;
+    }
+	.eventNav-2025 .ci-eventIcon2{
+        display: none;
+    }
+	.eventNav-2025 .nav-tabs .nav-item .nav-link, .eventNav-2025 .nav-tabs .nav-item .nav-link.active{
+		padding: 0;
+        text-align: center;
+	}
+}
+@media (max-width: 441px) {
+	
+}
