@@ -1302,42 +1302,42 @@
 													<tr>
 														<th scope="row"><label for="frequencyBandwidth">指配頻寬</label></th>
 														<td>
-															<input autocomplete="off" class="form-control text-center" data-frequency-role="bandwidth" id="frequencyBandwidth" inputmode="decimal" min="0" name="bandwidth" placeholder="請輸入數值" step="any" type="number" value="3300">
+															<input autocomplete="off" class="form-control text-center" data-frequency-role="bandwidth" id="frequencyBandwidth" inputmode="decimal" min="0" name="bandwidth" placeholder="請輸入數值" step="any" type="number">
 														</td>
 														<td class="text-start">業者取得之上行及下行頻寬總和（MHz）。</td>
 													</tr>
 													<tr>
 														<th scope="row"><label for="frequencyAnnualFactor">年度調整係數</label></th>
 														<td>
-															<input autocomplete="off" class="form-control text-center" data-frequency-role="annual-factor" id="frequencyAnnualFactor" inputmode="decimal" min="0" name="annualFactor" placeholder="請輸入數值" step="any" type="number" value="0.1">
+															<input autocomplete="off" class="form-control text-center" data-frequency-role="annual-factor" id="frequencyAnnualFactor" inputmode="decimal" min="0" name="annualFactor" placeholder="請輸入數值" step="any" type="number" >
 														</td>
 														<td class="text-start">自得標當年度起算第三年一月一日起適用第一年係數；3500 MHz 及 28000 MHz 頻段依序為 0.1、0.1、0.5、0.7，第五年起為 1；其他頻段依序為 0.1、0.4、0.7，第四年起為 1。</td>
 													</tr>
 													<tr>
 														<th scope="row"><label for="frequencyCoverageFactor">涵蓋係數</label></th>
 														<td>
-															<input autocomplete="off" class="form-control text-center" data-frequency-role="coverage-factor" id="frequencyCoverageFactor" inputmode="decimal" min="0" name="coverageFactor" placeholder="請輸入數值" step="any" type="number" value="0.15">
+															<input autocomplete="off" class="form-control text-center" data-frequency-role="coverage-factor" id="frequencyCoverageFactor" inputmode="decimal" min="0" name="coverageFactor" placeholder="請輸入數值" step="any" type="number" >
 														</td>
 														<td class="text-start">依基地臺與偏遠地區涵蓋指標計算。</td>
 													</tr>
 													<tr>
 														<th scope="row"><label for="frequencyBandFactor">頻段調整係數</label></th>
 														<td>
-															<input autocomplete="off" class="form-control text-center" data-frequency-role="band-factor" id="frequencyBandFactor" inputmode="decimal" min="0" name="bandFactor" placeholder="請輸入數值" step="any" type="number" value="0.75">
+															<input autocomplete="off" class="form-control text-center" data-frequency-role="band-factor" id="frequencyBandFactor" inputmode="decimal" min="0" name="bandFactor" placeholder="請輸入數值" step="any" type="number" >
 														</td>
 														<td class="text-start">依頻段特性與價值設定之權重。</td>
 													</tr>
 													<tr>
 														<th scope="row"><label for="frequencyDigitalDiscount">參與數位多元應用服務折扣費用</label></th>
 														<td>
-															<input autocomplete="off" class="form-control text-center" data-frequency-role="digital-discount" id="frequencyDigitalDiscount" inputmode="decimal" min="0" name="digitalDiscount" placeholder="請輸入數值" step="any" type="number" value="15000000">
+															<input autocomplete="off" class="form-control text-center" data-frequency-role="digital-discount" id="frequencyDigitalDiscount" inputmode="decimal" min="0" name="digitalDiscount" placeholder="請輸入數值" step="any" type="number" >
 														</td>
 														<td class="text-start">配合政府推動數位轉型、多元應用所給予的費用扣減。</td>
 													</tr>
 													<tr>
 														<th scope="row"><label for="frequencyOtherDiscount">其他折扣費用</label></th>
 														<td>
-															<input autocomplete="off" class="form-control text-center" data-frequency-role="other-discount" id="frequencyOtherDiscount" inputmode="decimal" min="0" name="otherDiscount" placeholder="請輸入數值" step="any" type="number" value="5000000">
+															<input autocomplete="off" class="form-control text-center" data-frequency-role="other-discount" id="frequencyOtherDiscount" inputmode="decimal" min="0" name="otherDiscount" placeholder="請輸入數值" step="any" type="number" >
 														</td>
 														<td class="text-start">包含配合國家重大政策、特定公益用途、偏遠地區特殊建設，或是法規另有規定的其他特定減免項目。</td>
 													</tr>
@@ -1347,7 +1347,7 @@
 											<div class="d-flex justify-content-center align-items-center gap-3 my-3 frequency-calc__actions">
 												<button class="btn btn-secondary px-4" data-frequency-role="calculate-btn" id="frequencyCalculateBtn" type="button">計算</button>
 												<div class="border rounded px-4 py-2 fw-bold frequency-calc__result">
-													計算結果：<output data-frequency-role="result-amount" id="frequencyResultAmount">NT$ 1,954,800</output>
+													計算結果：<output data-frequency-role="result-amount" id="frequencyResultAmount">NT$</output>
 												</div>
 											</div>
 
