@@ -1355,6 +1355,48 @@
 												繳納期程：計費期間為每年 1 月 1 日至 12 月 31 日，於<strong>每年 7 月 1 日至 7 月 31 日</strong>一次繳納（金額達 2 億元以上可申請分期）。
 											</p>
 											
+											<script>
+											document.addEventListener('DOMContentLoaded', () => {
+    const calculateBtn = document.querySelector('[data-frequency-role="calculate-btn"]');
+    const resultOutput = document.querySelector('[data-frequency-role="result-amount"]');
+
+    // 取得輸入欄位的數值（若為空值或非數字則預設為 0）
+    const getInputValue = (role) => {
+        const element = document.querySelector(`[data-frequency-role="${role}"]`);
+        if (!element) return 0;
+        // 移除可能存在的千分位逗號後轉為浮點數
+        const cleanValue = String(element.value).replace(/,/g, '');
+        const parsed = parseFloat(cleanValue);
+        return isNaN(parsed) ? 0 : parsed;
+    };
+
+    const calculateFee = () => {
+        // 固定基礎費率 7,630,000 元/MHz
+        const baseRate = 7630000;
+
+        // 讀取各參數輸入值
+        const bandwidth = getInputValue('bandwidth');               // 指配頻寬
+        const annualFactor = getInputValue('annual-factor');        // 年度調整係數
+        const coverageFactor = getInputValue('coverage-factor');    // 涵蓋係數
+        const bandFactor = getInputValue('band-factor');            // 頻段調整係數
+        const digitalDiscount = getInputValue('digital-discount');  // 參與數位多元應用服務折扣費用
+        const otherDiscount = getInputValue('other-discount');      // 其他折扣費用
+
+        // 公式：7,630,000 x 指配頻寬 x 年度調整係數 x 涵蓋係數 x 頻段調整係數 - 參與數位多元應用服務折扣費用 - 其他折扣費用
+        const totalFee = (baseRate * bandwidth * annualFactor * coverageFactor * bandFactor) - digitalDiscount - otherDiscount;
+
+        // 四捨五入至整數並加上千分位格式化（例如：NT$ 1,954,813）
+        const formattedResult = Math.round(totalFee).toLocaleString('en-US');
+        resultOutput.textContent = `NT$ ${formattedResult}`;
+    };
+
+    // 綁定點擊事件
+    if (calculateBtn) {
+        calculateBtn.addEventListener('click', calculateFee);
+    }
+});
+											</script>
+											
 											<!--                                           
 										   <section aria-labelledby="frequencyCalcTitle" class="frequency-calc">
 											
