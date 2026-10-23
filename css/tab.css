@@ -1,0 +1,262 @@
+
+.moda1331-tabBox #moda1331Pane1 > .wrap4,
+.moda1331-tabBox #moda1331Pane2 > .wrap4 {
+    margin-top: 0;
+}
+
+.eventNav-2025 .nav-tabs .nav-item{
+        max-width: calc(480px + 2rem);
+}
+
+@media (min-width: 577px) {
+    .moda1331-tabBox #moda1331Tab > .nav-item:first-child {
+        flex: 0 0 max-content;
+        width: max-content;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .moda1331-tabBox #moda1331Tab > .nav-item {
+        max-width: none;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+}
+
+.moda1331-tabBox .eventNav1.eventNav-2025 #moda1331Tab .nav-link {
+    display: inline-flex;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 2.5rem;
+    font-weight: bold !important;
+    white-space: nowrap;
+}
+
+@media (max-width: 991.98px) {
+    .moda1331-tabBox .eventNav1.eventNav-2025 #moda1331Tab .nav-link {
+        font-size: 2rem;
+    }
+}
+
+.moda1331-tabBox #moda1331Tab .moda1331-tab-icon {
+    display: inline-block;
+    flex: 0 0 72px;
+    width: 72px;
+    height: 48px;
+    background-color: currentColor;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.moda1331-tabBox #moda1331Tab .moda1331-tab-icon--mountain {
+    -webkit-mask-image: url("../img/icon-Mountain.svg");
+    mask-image: url("../img/icon-Mountain.svg");
+}
+
+.moda1331-tabBox #moda1331Tab .moda1331-tab-icon--calculate {
+    -webkit-mask-image: url("../img/icon-calculate.svg");
+    mask-image: url("../img/icon-calculate.svg");
+}
+
+@media (max-width: 576px) {
+    .moda1331-tabBox #moda1331Tab > .nav-item {
+        width: calc(50% - 8px);
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    .moda1331-tabBox .eventNav1.eventNav-2025 #moda1331Tab .nav-link {
+        width: 100%;
+        gap: 6px;
+        font-size: 0.95rem;
+    }
+
+    .moda1331-tabBox #moda1331Tab .moda1331-tab-icon {
+        flex-basis: 36px;
+        width: 36px;
+        height: 24px;
+    }
+}
+
+.frequency-calc {
+    color: #14224b;
+}
+
+#frequencyTypeTab .nav-link {
+    font-size: 1.5em;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 0;
+    color: #fff;
+    text-align: left;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#frequencyTypeTab .nav-link:not(.active):hover,
+#frequencyTypeTab .nav-link:not(.active):focus-visible {
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #fff;
+}
+
+#frequencyTypeTab .nav-link.active,
+#frequencyTypeTab .nav-link.active:hover,
+#frequencyTypeTab .nav-link.active:focus-visible {
+    background-color: #fff;
+    color: #6968ac;
+    font-weight: 700;
+}
+
+#frequencyTypeTab .nav-link:last-child {
+    border-bottom: 0;
+}
+
+#moda1331Pane2 > .wrap4 > .row.g-4 {
+    background-color: #dbdbeb45;
+    margin-top: 0;
+    row-gap: 24px;
+}
+
+#moda1331Pane2 > .wrap4 > .row.g-4 > [class*="col-"] {
+    margin-top: 0;
+}
+
+#moda1331Pane2 > .wrap4 > .row > .col-md-2 {
+    background-color: #6968ac;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.frequency-calc__source {
+    margin-bottom: 1rem;
+}
+
+.frequency-calc__source a {
+    color: #174fff;
+    text-decoration: underline;
+}
+
+.frequency-calc__table {
+    margin-bottom: 1.5rem;
+}
+
+.frequency-calc__table th,
+.frequency-calc__table td {
+    min-width: 8rem;
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+.frequency-calc__table thead th {
+    background-color: #dbdbeb;
+    font-weight: 700;
+}
+
+.frequency-calc__table > :not(caption) > * > * {
+    border: 2px solid #fff;
+}
+
+.frequency-calc__table tbody tr:nth-child(odd) > * {
+    background-color: #fafbfb;
+}
+
+.frequency-calc__table tbody tr:nth-child(even) > * {
+    background-color: #f4f6f7;
+}
+
+.frequency-calc__table .form-control,
+.frequency-calc__table .form-select {
+    min-width: 10rem;
+    margin: 0 auto;
+}
+
+.frequency-calc__table small {
+    display: block;
+    margin-top: 0.4rem;
+    line-height: 1.5;
+}
+
+.frequency-calc__note {
+    min-width: 18rem;
+    text-align: left;
+}
+
+.frequency-calc__note p:last-child {
+    margin-bottom: 0;
+}
+
+.frequency-calc__radios {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.frequency-calc__actions {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem auto;
+}
+
+.frequency-calc__button {
+    min-width: 14rem;
+    border-radius: 0.75rem;
+    background-color: #dbdbeb;
+    color: #14224b;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.frequency-calc__button:hover,
+.frequency-calc__button:focus-visible {
+    background-color: #c9c9df;
+    color: #14224b;
+}
+
+.frequency-calc__result {
+    display: flex;
+    min-width: 18rem;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 0.75rem;
+    background-color: #fafbfb;
+    padding: 0.85rem 1.25rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.frequency-calc__error {
+    color: #b42318;
+    font-weight: 700;
+}
+
+.frequency-calc__formula {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 767.98px) {
+    .frequency-calc__actions {
+        flex-direction: column;
+    }
+
+    .frequency-calc__button,
+    .frequency-calc__result {
+        width: 100%;
+    }
+}
